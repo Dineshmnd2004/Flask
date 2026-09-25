@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Website</title>
+</head>
+
+<body>
+
+    <h1>Welcome to Flask!</h1>
+    <p>This is my first HTML template.</p>
+
+    <h2>Student Details</h2>
+    <p>Name : {{ name }} </p>
+    <p>Course : {{ course }} </p>
+    <p>Age : {{ age }} </p>
+    <p>Subject : {{ sub }} </p>
+
+    <h3>Results</h3>
+    <p>Marks : {{ marks }} </p>
+
+    {% if marks >= 40 %}
+    <p>Result : Pass</p>
+    {% else %}
+    <p>Result : Fail</p>
+    {% endif %}
+
+</body>
+
+</html>

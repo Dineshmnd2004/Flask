@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Student Dashboard{% endblock %}
+
+{% block content %}
+<h1>Student Dashboard</h1>
+
+<p>Name: {{ student.name }}</p>
+<p>Course: {{ student.course }}</p>
+<p>Marks: {{ student.marks }}</p>
+
+{% if student.marks >= 40 %}
+<p>Result: Pass</p>
+{% else %}
+<p>Result: Fail</p>
+{% endif %}
+
+<h2>Skills</h2>
+<ul>
+    {% for skill in skills %}
+    <li>{{ skill }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
